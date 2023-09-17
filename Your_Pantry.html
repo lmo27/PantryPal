@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs@1.10.6/dist/interact.min.js"></script>
+    <title>Your Pantry </title>
+    <link rel = "stylesheet" href = "Pantry.css"/>
+    <script src = "Pantry.js" defer ></script>
+    <script src = "danddrop.js"> </script>
+    <script src = "danddrop.js" defer> </script>
+</head>
+<body>
+<div class = "background"> 
+    <h1 id = "heading"><a href = "index.html" id = "linked">Welcome to your personalized pantry!</a></h1>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <div class = "drag-container">  
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="Bell_pepper.jpeg" draggable="true" ondragstart="drag(event)" id="Vegetables" width="20" height="54">
+        </div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="apple.jpeg" draggable="true" ondragstart="drag(event)" id="Fruit" width="60" height="54">
+        </div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="steak.jpeg" draggable="true" ondragstart="drag(event)" id="Protein" width="60" height="54">
+        </div>
+        <div id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="dairy.jpeg" draggable="true" ondragstart="drag(event)" id="Dairy" width="60" height="54">
+        </div>
+        <div id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="grains.jpeg" draggable="true" ondragstart="drag(event)" id="Grains" width="60" height="54">
+        </div>
+    </div>
+
+    <div class = "generator">
+
+        <h2>Recipe Generator</h2>
+        <div class = "header">
+            <label for="ingredients">Drag the ingredients you have in the box above:</label>
+            <input type="text" id="ingredients" placeholder="">
+        </div>
+
+        <button id = btn onclick="generateRecipe()">Generate Recipe</button>
+        <button id = "reset" onclick="location.reload()"> Reset the selector </button>
+        <h3>Recipe:</h3>
+        <div id="recipe"></div>
+    </div>
+
+</div>   
+
+</body>
+
+
+    <!---- <div class = "container">
+        <h1 class = "text">Your PantryPal</h1>
+        <button id = "genButton"> Generate </button>
+        <img id = "pantry" src = "pantry.jpeg">
+    </div>
+
+    <div class = "foodContain">
+        <div id = "Bell Pepper"><img src = "Bell_pepper.jpeg"/></div>
+    </div> -->
+<!-- <div class = "container">
+    <div id="no-drop" class="drag-drop"> #no-drop </div>
+    <div id="yes-drop" class="drag-drop"> #yes-drop </div>
+    <div id="outer-dropzone" class="dropzone">
+      #outer-dropzone
+      <div id="inner-dropzone" class="dropzone">#inner-dropzone</div>
+     </div>
+    </div> -->
